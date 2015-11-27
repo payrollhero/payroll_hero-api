@@ -1,12 +1,18 @@
 module PayrollHero
   module Api
     module V2
-      class Worksites < BaseGroup
 
+      # Worksites Endpoint
+      class Worksites < BaseGroup
         def initialize(token)
-          client(token)
+          @client = new_client(token, :core)
         end
 
+        # implements the interface to the Worksites List endpoint
+        #
+        # @param [Fixnum] page
+        # @param [Fixnum] per_page
+        # @return [Hashie::Mash]
         def list(page: nil, per_page: nil)
           params = {
             page: page,
@@ -15,14 +21,8 @@ module PayrollHero
           params.delete_if { |k, v| v.nil? }
           client.get("/api/v2/worksites", params)
         end
-
-        def client(token = nil)
-          @client ||= begin
-            Client.new(token, base_url_for(:core))
-          end
-        end
-
       end
+
     end
   end
 end

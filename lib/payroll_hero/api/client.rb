@@ -27,13 +27,13 @@ module PayrollHero
         end
       end
 
-      def user_agent_string
-        if PayrollHero::Api.application_name != :none
-          "#{PayrollHero::Api.application_name} (PayrollHero::Api #{PayrollHero::Api::VERSION})"
-        else
-          "(PayrollHero::Api #{PayrollHero::Api::VERSION})"
-        end
+      def get(path, params)
+        rsp = wrap_request { @client.get(path, params) }
+        validate_response(rsp)
+        rsp.body
       end
+
+      private
 
       def error_from(response)
         klass = {
@@ -66,13 +66,13 @@ module PayrollHero
         end
       end
 
-      def get(path, params)
-        rsp = wrap_request { @client.get(path, params) }
-        validate_response(rsp)
-        rsp.body
+      def user_agent_string
+        if PayrollHero::Api.application_name != :none
+          "#{PayrollHero::Api.application_name} (PayrollHero::Api #{PayrollHero::Api::VERSION})"
+        else
+          "(PayrollHero::Api #{PayrollHero::Api::VERSION})"
+        end
       end
-
-      private
 
       def wrap_request
         with_retries(max_tries: 3) { yield }

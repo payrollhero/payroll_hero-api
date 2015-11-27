@@ -23,6 +23,16 @@ At this point its very rough, there is only a couple of endpoints defined but th
 
 See the tests for example usages.
 
+## Configuration
+
+```ruby
+PayrollHero::Api.configure do |config|
+  config.core_base_url = "http://api.payrollhero.ph.dev"
+  config.debug = false # when enabled all request info is logged to stdout
+  config.application_name = "Test Suite"
+end
+```
+
 ## Development
 
 After checking out the repo, run `bundle install` to install dependencies.
