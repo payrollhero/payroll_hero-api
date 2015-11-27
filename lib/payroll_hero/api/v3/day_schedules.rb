@@ -1,12 +1,25 @@
 module PayrollHero
   module Api
     module V3
-      class Scheduling < BaseGroup
 
+      # DaySchedules Endpoint
+      class DaySchedules < BaseGroup
         def initialize(token)
-          client(token)
+          @client = new_client(token, :core)
         end
 
+        # implements the interface to the DaySchedules List endpoint
+        #
+        # @return [Hashie::Mash]
+        # @param [Fixnum] page
+        # @param [Fixnum] per_page
+        # @param [Date] start_date
+        # @param [Date] end_date
+        # @param [TrueClass|FalseClass] permissions
+        # @param [TrueClass|FalseClass] breaks
+        # @param [Fixnum] worksite_id
+        # @param [Fixnum] excluded_worksite_id
+        # @param [Fixnum] employee_id
         def list(page: nil, per_page: nil, start_date: nil, end_date: nil, permissions: false, breaks: false, worksite_id: nil, excluded_worksite_id: nil, employee_id: nil)
           params = {
             page: page,
@@ -22,14 +35,8 @@ module PayrollHero
           params.delete_if { |k, v| v.nil? }
           client.get("/api/v3/day_schedules", params)
         end
-
-        def client(token = nil)
-          @client ||= begin
-            Client.new(token, base_url_for(:core))
-          end
-        end
-
       end
+
     end
   end
 end

@@ -2,8 +2,8 @@ module PayrollHero
   module Api
 
     module Errors
-      class GenericError < Exception
 
+      class GenericError < Exception
       end
 
       class ServerReturnedError < GenericError
