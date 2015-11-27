@@ -30,6 +30,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'faraday'
   spec.add_runtime_dependency 'faraday_middleware'
   spec.add_runtime_dependency 'hashie'
+  spec.add_runtime_dependency 'retries'
 
   spec.add_development_dependency 'bundler', '~> 1.10'
   spec.add_development_dependency 'rake', '~> 10.0'

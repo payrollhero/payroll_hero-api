@@ -1,5 +1,6 @@
 require 'faraday'
 require 'faraday_middleware'
+require 'retries'
 
 module PayrollHero
   module Api
@@ -66,9 +67,15 @@ module PayrollHero
       end
 
       def get(path, params)
-        rsp = @client.get(path, params)
+        rsp = wrap_request { @client.get(path, params) }
         validate_response(rsp)
         rsp.body
+      end
+
+      private
+
+      def wrap_request
+        with_retries(max_tries: 3) { yield }
       end
     end
 
