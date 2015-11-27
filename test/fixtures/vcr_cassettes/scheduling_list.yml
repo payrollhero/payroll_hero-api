@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.payrollhero.ph.dev/api/v3/day_schedules?breaks=false&permissions=false&token=l2zsmk8njz0l4w6sxlafl2wh2jot0df
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Test Suite (PayrollHero::Api 0.1.0)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Meta-Request-Version:
+      - 0.3.4
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"68ee17a05a46ca98c5e40b125f0f4db5"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Runtime:
+      - '8.057955'
+      X-Request-Id:
+      - 045b55b0-91fe-4eb6-ae4b-29fdc6e87a2f
+      Date:
+      - Fri, 27 Nov 2015 03:17:50 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.20
+      Server:
+      - nginx/1.8.0 + Phusion Passenger 5.0.20
+    body:
+      encoding: UTF-8
+      string: '{"day_schedules":[{"uid":"313a323031352d31312d3233","employee_id":1,"day":"2015-11-23","shifts":[{"start_time":1448294400,"end_time":1448323200,"worksite_id":1}]},{"uid":"313a323031352d31312d3234","employee_id":1,"day":"2015-11-24","shifts":[{"start_time":1448384400,"end_time":1448413200,"worksite_id":1}]},{"uid":"313a323031352d31312d3235","employee_id":1,"day":"2015-11-25","shifts":[{"start_time":1448474400,"end_time":1448503200,"worksite_id":1}]},{"uid":"313a323031352d31312d3236","employee_id":1,"day":"2015-11-26","shifts":[{"start_time":1448564400,"end_time":1448593200,"worksite_id":1}]},{"uid":"313a323031352d31312d3237","employee_id":1,"day":"2015-11-27","shifts":[{"start_time":1448654400,"end_time":1448683200,"worksite_id":1}]},{"uid":"313a323031352d31312d3238","employee_id":1,"day":"2015-11-28","shifts":[{"start_time":1448740800,"end_time":1448755200,"worksite_id":1}]},{"uid":"313a323031352d31312d3239","employee_id":1,"day":"2015-11-29","shifts":[]}],"page":1,"per_page":175,"total_pages":1}'
+    http_version: 
+  recorded_at: Fri, 27 Nov 2015 03:17:50 GMT
+recorded_with: VCR 3.0.0

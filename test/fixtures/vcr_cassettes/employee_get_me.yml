@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.payrollhero.ph.dev/api/v3/employees/me?show_tags=false&token=l2zsmk8njz0l4w6sxlafl2wh2jot0df
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Test Suite (PayrollHero::Api 0.1.0)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Meta-Request-Version:
+      - 0.3.4
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"cdb215732d004c14bf481e4cdf45f00d"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Runtime:
+      - '0.691917'
+      X-Request-Id:
+      - 82145460-8d7a-4f6d-84bc-5bd82f0116f3
+      Date:
+      - Fri, 27 Nov 2015 03:23:31 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.20
+      Server:
+      - nginx/1.8.0 + Phusion Passenger 5.0.20
+    body:
+      encoding: UTF-8
+      string: '{"employee":{"id":1,"account_id":1,"firstname":"Piotr","lastname":"Banasik","gender":"male","timezone":"Asia/Shanghai","clock_on_non_work_days":true,"works_on_holidays":false,"avatar":{"profile":null},"employment_date":"2015-09-24","date_of_birth":null,"primary_worksite_id":1,"employee_number":""}}'
+    http_version: 
+  recorded_at: Fri, 27 Nov 2015 03:23:31 GMT
+recorded_with: VCR 3.0.0
