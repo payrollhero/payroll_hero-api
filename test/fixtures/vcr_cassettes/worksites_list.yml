@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.payrollhero.ph.dev/api/v2/worksites?token=l2zsmk8njz0l4w6sxlafl2wh2jot0df
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Test Suite (PayrollHero::Api 0.1.0)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Meta-Request-Version:
+      - 0.3.4
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"89cbe3bcb6698f981a442a55c9201116"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Runtime:
+      - '3.067540'
+      X-Request-Id:
+      - 277fb745-9cec-489b-a6be-8679cd94e72c
+      Date:
+      - Fri, 27 Nov 2015 03:14:56 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.20
+      Server:
+      - nginx/1.8.0 + Phusion Passenger 5.0.20
+    body:
+      encoding: UTF-8
+      string: '{"worksites":[{"id":1,"name":"Default worksite","address":"Philippines","latitude":null,"longitude":null,"proximity_radius":999.0,"account_id":1,"time_zone":"America/Los_Angeles"}]}'
+    http_version: 
+  recorded_at: Fri, 27 Nov 2015 03:14:56 GMT
+recorded_with: VCR 3.0.0
