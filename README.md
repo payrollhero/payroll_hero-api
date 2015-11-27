@@ -1,5 +1,7 @@
 # Payrollhero::Api
 
+[ ![Codeship Status for payrollhero/payroll_hero-api](https://codeship.com/projects/d659b9a0-76ec-0133-c19b-5e44421d15ab/status?branch=master)](https://codeship.com/projects/118323)
+
 ## Installation
 
 Add this line to your application's Gemfile:
