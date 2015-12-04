@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.payrollhero.ph.dev/api/v4/employees/5?token=2j86kvirxyyhj3lyvurytj7gcis5l7t
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Test Suite (PayrollHero::Api 0.1.0)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 04 Dec 2015 01:16:30 GMT
+      Etag:
+      - W/"2a35b42c768545b7d64f8dffb74ae29f"
+      Server:
+      - nginx/1.1.19
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 7df1381d-0f24-4458-a1c4-dc3b5ff1ea4e
+      X-Runtime:
+      - '0.065289'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '401'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"employee":{"id":5,"account_id":65,"firstname":"Jeff Kent","lastname":"Buenaflor","gender":"male","timezone":"Asia/Hong_Kong","clock_on_non_work_days":false,"works_on_holidays":false,"avatar":{"profile":"https://s3.amazonaws.com/files2.payrollhero.com/production/employees/4115/avatars/profile/7a2ce02155598d9a915cad24c1104865?AWSAccessKeyId=AKIAIDREUNA4YXQXIMYQ&Expires=1451783790&Signature=VgxXOLCL3TklvAgxftdzF1Ox97k%3D"},"employment_date":null,"date_of_birth":"1990-07-04","primary_worksite_id":null,"employee_number":""}}'
+    http_version: 
+  recorded_at: Fri, 04 Dec 2015 01:16:30 GMT
+recorded_with: VCR 3.0.0
