@@ -32,7 +32,7 @@ module PayrollHero
             excluded_worksite_id: excluded_worksite_id,
             employee_id: employee_id,
           }
-          params.delete_if { |k, v| v.nil? }
+          remove_nil_values_from!(params)
           client.get("/api/v3/day_schedules", params)
         end
       end
