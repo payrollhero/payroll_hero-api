@@ -17,11 +17,10 @@ module PayrollHero
           params = {
             show_tags: show_tags,
           }
-          params.delete_if { |k, v| v.nil? }
+          remove_nil_values_from!(params)
           client.get("/api/v3/employees/#{id}", params)
         end
       end
-
     end
   end
 end

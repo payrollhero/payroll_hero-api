@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.payrollhero.ph.dev/api/v4/employees/5/superiors?token=2j86kvirxyyhj3lyvurytj7gcis5l7t
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Test Suite (PayrollHero::Api 0.1.0)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 04 Dec 2015 01:16:30 GMT
+      Etag:
+      - W/"2a35b42c768545b7d64f8dffb74ae29f"
+      Server:
+      - nginx/1.1.19
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 7df1381d-0f24-4458-a1c4-dc3b5ff1ea4e
+      X-Runtime:
+      - '0.065289'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '401'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"employees":[{"id":2,"account_id":65,"employment_date":"2011-08-01","employee_number":"","works_on_holidays":false,"firstname":"Adam","lastname":"Baechler","gender":"male","timezone":"Singapore","clock_on_non_work_days":true,"tags":["Admin","Lean Payroll"],"position_name":"General Manager"},{"id":9,"account_id":65,"employment_date":"2012-08-16","employee_number":"","works_on_holidays":false,"firstname":"Vlademir","lastname":"Suria","gender":"male","timezone":"Pacific Time (US & Canada)","clock_on_non_work_days":true,"tags":["Engineers","Lean Payroll"],"position_name":"Senior RoR Engineer"},{"id":14,"account_id":65,"employment_date":"2012-10-17","employee_number":"","works_on_holidays":true,"firstname":"Piotr","lastname":"Banasik","gender":"male","timezone":"Singapore","clock_on_non_work_days":true,"tags":["Lean Payroll","Engineers"],"position_name":"Lead Engineer"}],"pagination":{"total_records":3,"total_pages":1,"per_page":100,"page":1}}'
+    http_version:
+  recorded_at: Fri, 04 Dec 2015 01:16:30 GMT
+recorded_with: VCR 3.0.0
