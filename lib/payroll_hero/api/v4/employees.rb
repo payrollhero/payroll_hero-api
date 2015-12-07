@@ -12,8 +12,12 @@ module PayrollHero
         # @return [Hashie::Mash]
         # @param [Fixnum|String] id
         # @param [Hash] params
-        def get(id, params={})
-          params = params.select { |kev, _| key.in?([:only, :except, :include]) && !value.nil? }
+        def get(id, only: nil, except: nil, include: nil)
+          params = {}.tap do |query_params|
+            query_params[:only] = only if only
+            query_params[:except] = except if except
+            query_params[:include] = include if include
+          end
           client.get("/api/v4/employees/#{id}", params)
         end
       end
