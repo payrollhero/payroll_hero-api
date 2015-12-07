@@ -18,11 +18,10 @@ module PayrollHero
             page: page,
             per_page: per_page,
           }
-          params.delete_if { |k, v| v.nil? }
+          remove_nil_values_from!(params)
           client.get("/api/v2/worksites", params)
         end
       end
-
     end
   end
 end
