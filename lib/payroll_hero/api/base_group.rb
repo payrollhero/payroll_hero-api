@@ -2,6 +2,11 @@ module PayrollHero
   module Api
 
     class BaseGroup
+      def initialize(token)
+        @client = new_client(token, :core)
+      end
+
+
       attr_reader :client
 
       private
