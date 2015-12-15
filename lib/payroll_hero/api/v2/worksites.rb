@@ -4,10 +4,6 @@ module PayrollHero
 
       # Worksites Endpoint
       class Worksites < BaseGroup
-        def initialize(token)
-          @client = new_client(token, :core)
-        end
-
         # implements the interface to the Worksites List endpoint
         #
         # @param [Fixnum] page

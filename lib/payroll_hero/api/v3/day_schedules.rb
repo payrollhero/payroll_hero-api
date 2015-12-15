@@ -4,10 +4,6 @@ module PayrollHero
 
       # DaySchedules Endpoint
       class DaySchedules < BaseGroup
-        def initialize(token)
-          @client = new_client(token, :core)
-        end
-
         # implements the interface to the DaySchedules List endpoint
         #
         # @return [Hashie::Mash]
