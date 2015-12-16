@@ -6,6 +6,8 @@ module PayrollHero
   module Api
 
     class Client
+      attr_reader :client
+
       def initialize(token, base_url)
         headers = {
           'User-Agent' => user_agent_string,
@@ -28,13 +30,13 @@ module PayrollHero
       end
 
       def get(path, params)
-        rsp = wrap_request { @client.get(path, params) }
+        rsp = wrap_request { client.get(path, params) }
         validate_response(rsp)
         rsp.body
       end
 
       def post(path, params)
-        response = wrap_request { @client.post(path, params) }
+        response = wrap_request { client.post(path, params) }
         validate_response(response)
         response.body
       end
