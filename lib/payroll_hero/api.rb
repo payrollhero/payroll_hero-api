@@ -18,7 +18,8 @@ module PayrollHero
           employees: V3::Employees.new(token),
         },
         v4: {
-          employees: V4::Employees.new(token)
+          employees: V4::Employees.new(token),
+          leaves: V4::Leaves.new(token)
         }
       }
       Hashie::Mash.new(sections)
@@ -39,3 +40,4 @@ require_relative 'api/v3/day_schedules'
 require_relative 'api/v3/employees'
 
 require_relative 'api/v4/employees'
+require_relative 'api/v4/leaves'
