@@ -33,6 +33,12 @@ module PayrollHero
         rsp.body
       end
 
+      def post(path, params)
+        response = wrap_request { @client.post(path, params) }
+        validate_response(response)
+        response.body
+      end
+
       private
 
       def error_from(response)
