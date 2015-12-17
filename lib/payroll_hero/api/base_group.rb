@@ -19,7 +19,7 @@ module PayrollHero
       end
 
       def remove_empty_values_from!(hash)
-        hash.delete_if { |_, value| value.empty? }
+        hash.delete_if { |_, value| value.nil? || value.empty? }
       end
     end
   end
