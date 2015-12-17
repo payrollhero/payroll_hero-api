@@ -15,9 +15,12 @@ describe 'V4 Leaves' do
         }
       }
     end
-    it do
+
+    it 'works' do
       VCR.use_cassette('v4_leave_create') do
-        client.v4.leaves.create(attributes)
+        response = client.v4.leaves.create(attributes)
+
+        response.must_equal?({'status' => 'created'})
       end
     end
   end
