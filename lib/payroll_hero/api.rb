@@ -19,7 +19,8 @@ module PayrollHero
         },
         v4: {
           employees: V4::Employees.new(token),
-          leaves: V4::Leaves.new(token)
+          leaves: V4::Leaves.new(token),
+          permissions: V4::Permissions.new(token),
         }
       }
       Hashie::Mash.new(sections)
@@ -41,3 +42,4 @@ require_relative 'api/v3/employees'
 
 require_relative 'api/v4/employees'
 require_relative 'api/v4/leaves'
+require_relative 'api/v4/permissions'

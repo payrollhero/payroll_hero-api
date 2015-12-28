@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.payrollhero.ph.dev/api/v4/employees/5/superiors?token=2j86kvirxyyhj3lyvurytj7gcis5l7t
+    uri: http://api.payrollhero.dev/api/v4/employees/5/superiors?token=2j86kvirxyyhj3lyvurytj7gcis5l7t
     body:
       encoding: US-ASCII
       string: ''
