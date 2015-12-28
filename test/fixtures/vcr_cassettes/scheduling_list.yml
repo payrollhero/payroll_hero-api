@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.payrollhero.ph.dev/api/v3/day_schedules?breaks=false&permissions=false&token=l2zsmk8njz0l4w6sxlafl2wh2jot0df
+    uri: http://api.payrollhero.dev/api/v3/day_schedules?breaks=false&permissions=false&token=l2zsmk8njz0l4w6sxlafl2wh2jot0df
     body:
       encoding: US-ASCII
       string: ''

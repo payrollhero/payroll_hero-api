@@ -15,6 +15,6 @@ VCR.configure do |config|
 end
 
 PayrollHero::Api.configure do |config|
-  config.core_base_url = "http://api.payrollhero.ph.dev"
+  config.core_base_url = "http://api.payrollhero.dev"
   config.application_name = "Test Suite"
 end
