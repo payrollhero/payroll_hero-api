@@ -29,7 +29,7 @@ module PayrollHero
         end
       end
 
-      def get(path, params)
+      def get(path, params = {})
         rsp = wrap_request { client.get(path, params) }
         validate_response(rsp)
         rsp.body
