@@ -4,8 +4,7 @@ module PayrollHero
       # Permissions Endpoint
       class Permissions < BaseGroup
         def list
-          params = {}
-          client.get("/api/v4/permissions", params)
+          client.get("/api/v4/permissions")
         end
       end
     end
