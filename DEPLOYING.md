@@ -1,3 +1,19 @@
+## Setup
+
+In order to deploy a new version of the gem into the wild ...
+
+You will need to configure your github api token for the changelog.
+
+Generate a new token for changelogs [here](https://github.com/settings/tokens/new).
+
+add:
+
+```bash
+export CHANGELOG_GITHUB_TOKEN=YOUR_CHANGELOG_API_TOKEN
+```
+
+somewhere in your shell init. (ie .zshrc or simillar)
+
 ## Deploying
 
 1. Update `lib/ph_utility/version.rb`
