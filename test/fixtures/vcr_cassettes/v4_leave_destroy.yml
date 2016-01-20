@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: http://api.payrollhero.dev/api/v4/leaves/core-transaction-id?token=83hckixg8fqyse9aozjfb03grs9kgrl
+    body:
+    headers:
+      User-Agent:
+      - Test Suite (PayrollHero::Api 0.1.1)
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"745dd02e7e0edb5ddce6c32f9a36fe4c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Meta-Request-Version:
+      - 0.3.4
+      X-Request-Id:
+      - a99ec7b6-a448-4ba6-a7e6-51b20e0e30a1
+      X-Runtime:
+      - '1.519857'
+      Date:
+      - Wed, 16 Dec 2015 07:23:42 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"status":"deleted"}'
+    http_version:
+  recorded_at: Wed, 20 Jan 2016 08:55:32 GMT
+recorded_with: VCR 3.0.0

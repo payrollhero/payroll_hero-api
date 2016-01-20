@@ -30,18 +30,24 @@ module PayrollHero
       end
 
       def get(path, params = {})
-        rsp = wrap_request { client.get(path, params) }
-        validate_response(rsp)
-        rsp.body
+        do_request(:get, path, params)
       end
 
       def post(path, params)
-        response = wrap_request { client.post(path, params) }
-        validate_response(response)
-        response.body
+        do_request(:post, path, params)
+      end
+
+      def delete(path, params = {})
+        do_request(:delete, path, params)
       end
 
       private
+
+      def do_request(method, path, params)
+        response = wrap_request { client.public_send(method, path, params) }
+        validate_response(response)
+        response.body
+      end
 
       def error_from(response)
         klass = {

@@ -24,4 +24,16 @@ describe 'V4 Leaves' do
       end
     end
   end
+
+  describe "#destroy" do
+    let(:id) { 'core-transaction-id' }
+
+    it 'works' do
+      VCR.use_cassette('v4_leave_destroy') do
+        response = client.v4.leaves.destroy(id)
+
+        response.must_equal?('status' => 'deleted')
+      end
+    end
+  end
 end
