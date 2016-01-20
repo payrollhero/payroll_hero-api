@@ -10,6 +10,10 @@ module PayrollHero
         def create(attributes)
           client.post("/api/v4/leaves", attributes)
         end
+
+        def destroy(id)
+          client.delete("/api/v4/leaves/#{id}")
+        end
       end
     end
   end
