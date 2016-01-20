@@ -16,3 +16,8 @@ Rake::Task['release:rubygem_push'].enhance do
   filename = "pkg/#{specification.name}-#{specification.version}.gem"
   system("fury push #{filename.inspect} --as=payrollhero")
 end
+
+desc "Updates the changelog"
+task :changelog do
+  sh "github_changelog_generator payrollhero/payroll_hero-api --simple-list"
+end
