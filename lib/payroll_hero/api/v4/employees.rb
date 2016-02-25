@@ -3,6 +3,25 @@ module PayrollHero
     module V4
       # Employees Endpoint
       class Employees < BaseGroup
+        # Implements the interface to get a list of accessible employees.
+        #
+        # @return [Hashie::Mash]
+        # @param [Array|Symbol] only - Attribute names to be included on the response
+        # @param [Array|Symbol] except - Attribute names to be excluded on the response
+        # @param [Array|Symbol] include - Association names to be included in the response
+        def list(only: [], except: [], include: [], page: nil, per_page: nil)
+          params = {
+            only: Array(only),
+            except: Array(except),
+            include: Array(include),
+            page: page,
+            per_page: per_page,
+          }
+
+          remove_empty_values_from!(params)
+          client.get("/api/v4/employees", params)
+        end
+
         # implements the interface to get a single Employee record
         #
         # @return [Hashie::Mash]
