@@ -38,5 +38,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'minitest-reporters'
   spec.add_development_dependency 'vcr'
   spec.add_development_dependency 'webmock'
-  spec.add_development_dependency 'github_changelog_generator', '~> 1.6'
+  # Version locked as 1.10.4 has known installation issues
+  spec.add_development_dependency 'github_changelog_generator', '1.10.1'
 end

@@ -4,6 +4,28 @@ describe 'V4 Scheduling' do
   let(:token) { "2j86kvirxyyhj3lyvurytj7gcis5l7t" } # this is only really used to generate the vcr entry
   let(:client) { PayrollHero::Api.new(token) }
 
+  describe 'list' do
+    it do
+      VCR.use_cassette('v4_employees') do
+        response = client.v4.employees.list
+        expect(response['employees'].first.keys).must_equal([
+          "id",
+          "account_id",
+          "employment_date",
+          "employee_number",
+          "works_on_holidays",
+          "firstname",
+          "lastname",
+          "gender",
+          "timezone",
+          "clock_on_non_work_days",
+          "tags",
+          "position_name",
+        ])
+      end
+    end
+  end
+
   describe "get" do
     it do
       VCR.use_cassette('v4_employee_get') do
