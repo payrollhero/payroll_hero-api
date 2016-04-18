@@ -1,40 +1,12 @@
 # Change Log
 
-## [v0.2.1](https://github.com/payrollhero/payroll_hero-api/tree/v0.2.1) (2016-01-20)
-
-[Full Changelog](https://github.com/payrollhero/payroll_hero-api/compare/v0.2.0...v0.2.1)
-
+## [v1.0.0](https://github.com/payrollhero/payroll_hero-api/tree/v1.0.0) (2016-04-18)
+- Add api/v4 employees list interface [\#6](https://github.com/payrollhero/payroll_hero-api/pull/6) ([nicosuria](https://github.com/nicosuria))
 - Add delete leave call. [\#5](https://github.com/payrollhero/payroll_hero-api/pull/5) ([mykola-kyryk](https://github.com/mykola-kyryk))
-
-## [v0.2.0](https://github.com/payrollhero/payroll_hero-api/tree/v0.2.0) (2015-12-29)
-
-[Full Changelog](https://github.com/payrollhero/payroll_hero-api/compare/v0.1.4...v0.2.0)
-
-## [v0.1.4](https://github.com/payrollhero/payroll_hero-api/tree/v0.1.4) (2015-12-28)
-
-[Full Changelog](https://github.com/payrollhero/payroll_hero-api/compare/v0.1.3...v0.1.4)
-
 - Add v4/permissions [\#4](https://github.com/payrollhero/payroll_hero-api/pull/4) ([mykola-kyryk](https://github.com/mykola-kyryk))
-
-## [v0.1.3](https://github.com/payrollhero/payroll_hero-api/tree/v0.1.3) (2015-12-17)
-
-[Full Changelog](https://github.com/payrollhero/payroll_hero-api/compare/v0.1.2...v0.1.3)
-
-- Feature/add v4 leaves resource [\#2](https://github.com/payrollhero/payroll_hero-api/pull/2) ([nicosuria](https://github.com/nicosuria))
-
-## [v0.1.2](https://github.com/payrollhero/payroll_hero-api/tree/v0.1.2) (2015-12-17)
-
-[Full Changelog](https://github.com/payrollhero/payroll_hero-api/compare/v0.1.1...v0.1.2)
-
 - Add pagination params to V4 Employees [\#3](https://github.com/payrollhero/payroll_hero-api/pull/3) ([mykola-kyryk](https://github.com/mykola-kyryk))
-
-## [v0.1.1](https://github.com/payrollhero/payroll_hero-api/tree/v0.1.1) (2015-12-07)
-
-[Full Changelog](https://github.com/payrollhero/payroll_hero-api/compare/v0.1.0...v0.1.1)
-
+- Feature/add v4 leaves resource [\#2](https://github.com/payrollhero/payroll_hero-api/pull/2) ([nicosuria](https://github.com/nicosuria))
 - Api v4 employees resource [\#1](https://github.com/payrollhero/payroll_hero-api/pull/1) ([nicosuria](https://github.com/nicosuria))
-
-## [v0.1.0](https://github.com/payrollhero/payroll_hero-api/tree/v0.1.0) (2015-11-27)
 
 
 
