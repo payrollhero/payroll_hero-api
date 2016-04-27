@@ -51,6 +51,7 @@ module PayrollHero
 
       def error_from(response)
         klass = {
+          400 => Errors::BadRequest,
           401 => Errors::Unauthorized,
           422 => Errors::UnprocessableEntity,
           500 => Errors::InternalServerError,
@@ -64,7 +65,7 @@ module PayrollHero
             raise klass.new('unknown', response.body.inspect)
           end
         else
-          raise klass.new('unknown', response.body)
+          raise klass.new("unknown: #{response.status}", response.body)
         end
       end
 

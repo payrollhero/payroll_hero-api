@@ -15,6 +15,9 @@ module PayrollHero
         attr_reader :code
       end
 
+      class BadRequest < ServerReturnedError
+      end
+
       class Unauthorized < ServerReturnedError
       end
 
