@@ -1,5 +1,10 @@
 # Change Log
 
+## [v1.0.1](https://github.com/payrollhero/payroll_hero-api/tree/v1.0.1) (2016-05-16)
+[Full Changelog](https://github.com/payrollhero/payroll_hero-api/compare/v1.0.0...v1.0.1)
+
+- Add attendance days [\#7](https://github.com/payrollhero/payroll_hero-api/pull/7) ([vincentpaca](https://github.com/vincentpaca))
+
 ## [v1.0.0](https://github.com/payrollhero/payroll_hero-api/tree/v1.0.0) (2016-04-18)
 - Add api/v4 employees list interface [\#6](https://github.com/payrollhero/payroll_hero-api/pull/6) ([nicosuria](https://github.com/nicosuria))
 - Add delete leave call. [\#5](https://github.com/payrollhero/payroll_hero-api/pull/5) ([mykola-kyryk](https://github.com/mykola-kyryk))
