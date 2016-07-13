@@ -3,16 +3,17 @@ module PayrollHero
 
     module Errors
 
-      class GenericError < Exception
+      class GenericError < StandardError
       end
 
       class ServerReturnedError < GenericError
         def initialize(code, message)
           @code = code
+          @message = message
           super("#{code}: #{message}")
         end
 
-        attr_reader :code
+        attr_reader :code, :message
       end
 
       class BadRequest < ServerReturnedError
