@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.payrollhero.dev/api/v4/shifts?token=4numx2k58vd3y0qw63r6dcqdkxcv3h0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Test Suite (PayrollHero::Api 1.0.2)
+  response:
+    status:
+      code: 200
+      message:
+    headers:
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      etag:
+      - W/"f434bfc58352ef90591548cce907fd30"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-meta-request-version:
+      - 0.4.0
+      x-request-id:
+      - 9e1c8659-39a7-46f7-85fb-50a47f7c7e9e
+      x-runtime:
+      - '0.141288'
+      date:
+      - Mon, 12 Sep 2016 10:08:45 GMT
+      connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"shifts":[{"id":1,"name":"08:00
+      - 16:00","category_name":"","items":[{"kind":"work","start_time":"08:00","end_time":"16:00","start_day":0,"end_day":0}]},{"id":3,"name":"10:00
+      - 18:00","category_name":"","items":[{"kind":"work","start_time":"10:00","end_time":"18:00","start_day":0,"end_day":0}]}]}'
+    http_version:
+  recorded_at: Mon, 12 Sep 2016 10:08:45 GMT
+recorded_with: VCR 3.0.0
