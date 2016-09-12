@@ -16,7 +16,7 @@ somewhere in your shell init. (ie .zshrc or simillar)
 
 ## Deploying
 
-1. Update `lib/ph_utility/version.rb`
+1. Update `lib/payroll_hero/api/version.rb`
 2. Commit the changed files with the version number eg: `1.8.0`
 3. Push this to git
 4. Run `rake release`
