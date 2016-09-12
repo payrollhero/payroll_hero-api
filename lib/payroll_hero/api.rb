@@ -22,6 +22,7 @@ module PayrollHero
           employees: V4::Employees.new(token),
           leaves: V4::Leaves.new(token),
           permissions: V4::Permissions.new(token),
+          shifts: V4::Shifts.new(token),
         }
       }
       Hashie::Mash.new(sections)
@@ -45,3 +46,4 @@ require_relative 'api/v3/attendance_days'
 require_relative 'api/v4/employees'
 require_relative 'api/v4/leaves'
 require_relative 'api/v4/permissions'
+require_relative 'api/v4/shifts'
