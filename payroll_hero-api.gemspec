@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Ruby API Client for PayrollHero Apis}
   spec.description   = %q{Provides a clean canonical interface to accessing PayrollHero APIs with Ruby}
-  spec.homepage      = "http://github.com/payrollhero/"
+  spec.homepage      = 'http://github.com/payrollhero/'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
@@ -26,8 +26,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'bundler', '~> 1.9'
   spec.add_development_dependency 'rake', '~> 10.0'
-  spec.add_development_dependency 'minitest'
-  spec.add_development_dependency 'minitest-reporters'
+  spec.add_development_dependency 'rspec'
   spec.add_development_dependency 'vcr'
   spec.add_development_dependency 'webmock'
   spec.add_development_dependency 'rack', '< 2.0.0' # requires ruby >= 2.2.2 for 2.0
