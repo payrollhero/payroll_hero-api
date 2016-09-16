@@ -1,5 +1,14 @@
 # Change Log
 
+## [v1.2.0](https://github.com/payrollhero/payroll_hero-api/tree/v1.2.0) (2016-09-16)
+[Full Changelog](https://github.com/payrollhero/payroll_hero-api/compare/v1.1.0...v1.2.0)
+
+## [v1.1.0](https://github.com/payrollhero/payroll_hero-api/tree/v1.1.0) (2016-09-12)
+[Full Changelog](https://github.com/payrollhero/payroll_hero-api/compare/v1.0.1...v1.1.0)
+
+- Add v4 shifts api [\#10](https://github.com/payrollhero/payroll_hero-api/pull/10) ([piotrb](https://github.com/piotrb))
+- Fix error inheritance so that it's catchable by default. [\#9](https://github.com/payrollhero/payroll_hero-api/pull/9) ([bramski](https://github.com/bramski))
+
 ## [v1.0.1](https://github.com/payrollhero/payroll_hero-api/tree/v1.0.1) (2016-05-16)
 [Full Changelog](https://github.com/payrollhero/payroll_hero-api/compare/v1.0.0...v1.0.1)
 
