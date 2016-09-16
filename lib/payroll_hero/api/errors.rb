@@ -16,13 +16,25 @@ module PayrollHero
         attr_reader :code, :error_details
       end
 
-      class BadRequest < ServerReturnedError
+      class BadRequest < ServerReturnedError # 400
       end
 
-      class Unauthorized < ServerReturnedError
+      class Unauthorized < ServerReturnedError # 401
       end
 
-      class UnprocessableEntity < ServerReturnedError
+      class Forbidden < ServerReturnedError # 403
+      end
+
+      class NotFound < ServerReturnedError # 404
+      end
+
+      class MethodNotAllowed < ServerReturnedError # 405
+      end
+
+      class NotAcceptable < ServerReturnedError # 406
+      end
+
+      class UnprocessableEntity < ServerReturnedError # 422
       end
 
       class InternalServerError < ServerReturnedError

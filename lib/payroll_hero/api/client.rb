@@ -53,7 +53,14 @@ module PayrollHero
         klass = {
           400 => Errors::BadRequest,
           401 => Errors::Unauthorized,
+
+          403 => Errors::Forbidden,
+          404 => Errors::NotFound,
+          405 => Errors::MethodNotAllowed,
+          406 => Errors::NotAcceptable,
+
           422 => Errors::UnprocessableEntity,
+
           500 => Errors::InternalServerError,
         }[response.status] || Errors::ServerReturnedError
 
