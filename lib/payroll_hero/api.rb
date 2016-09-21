@@ -23,6 +23,7 @@ module PayrollHero
           leaves: V4::Leaves.new(token),
           permissions: V4::Permissions.new(token),
           shifts: V4::Shifts.new(token),
+          schedule_events: V4::ScheduleEvents.new(token),
         }
       }
       Hashie::Mash.new(sections)
@@ -47,3 +48,4 @@ require_relative 'api/v4/employees'
 require_relative 'api/v4/leaves'
 require_relative 'api/v4/permissions'
 require_relative 'api/v4/shifts'
+require_relative 'api/v4/schedule_events'
