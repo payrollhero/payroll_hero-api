@@ -80,11 +80,12 @@ module PayrollHero
         case response.status
         when 400..499, 500..599
           raise error_from(response)
-        when 200
-          # this is cool, just return
+        when 200..299
+          # All success status codes, some are important, but should have already been handled by
+          # the underlying protocol
           return
         else
-          raise "unhandled error: #{response.status}"
+          raise UnexpectedResponse, "Unexpected response status: #{response.status}"
         end
       end
 

@@ -34,6 +34,9 @@ module PayrollHero
       class NotAcceptable < ServerReturnedError # 406
       end
 
+      class UnexpectedResponse < ServerReturnedError
+      end
+
       class UnprocessableEntity < ServerReturnedError # 422
       end
 

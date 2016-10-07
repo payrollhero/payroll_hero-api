@@ -5,6 +5,8 @@ module PayrollHero
     extend Configuration
 
     define_setting :core_base_url
+    define_setting :time_base_url
+    define_setting :leave_management_base_url
     define_setting :debug, false
     define_setting :application_name, :none
 
