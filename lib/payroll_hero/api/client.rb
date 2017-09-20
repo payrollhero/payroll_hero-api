@@ -37,8 +37,24 @@ module PayrollHero
         do_request(:post, path, params)
       end
 
+      def put(path, params)
+        do_request(:put, path, params)
+      end
+
       def delete(path, params = {})
         do_request(:delete, path, params)
+      end
+
+      def head(path, params = {})
+        do_request(:head, path, params)
+      end
+
+      def patch
+        do_request(:patch, path, params)
+      end
+
+      def options
+        do_request(:options, path, params)
       end
 
       private
