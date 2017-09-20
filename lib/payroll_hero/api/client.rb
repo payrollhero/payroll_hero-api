@@ -33,11 +33,11 @@ module PayrollHero
         do_request(:get, path, params)
       end
 
-      def post(path, params)
+      def post(path, params = {})
         do_request(:post, path, params)
       end
 
-      def put(path, params)
+      def put(path, params = {})
         do_request(:put, path, params)
       end
 
@@ -49,11 +49,11 @@ module PayrollHero
         do_request(:head, path, params)
       end
 
-      def patch
+      def patch(path, params = {})
         do_request(:patch, path, params)
       end
 
-      def options
+      def options(path, params = {})
         do_request(:options, path, params)
       end
 
