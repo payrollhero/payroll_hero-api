@@ -11,8 +11,8 @@ module PayrollHero
           client.post("/api/v4/leaves", attributes)
         end
 
-        def destroy(id)
-          client.delete("/api/v4/leaves/#{id}")
+        def destroy(id, **params)
+          client.delete("/api/v4/leaves/#{id}", params)
         end
       end
     end
