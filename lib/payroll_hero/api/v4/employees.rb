@@ -10,13 +10,16 @@ module PayrollHero
         # @param [Array|Symbol] except - Attribute names to be excluded on the response
         # @param [Array|Symbol] include - Association names to be included in the response
         def list(only: [], except: [], include: [], page: nil, per_page: nil, **params)
-          combined_params = params.merge only: Array(only),
-                                         except: Array(except),
-                                         include: Array(include),
-                                         page: page,
-                                         per_page: per_page
+          combined_params = params.merge(
+            remove_empty_values_from!(
+              only: Array(only),
+              except: Array(except),
+              include: Array(include),
+              page: page,
+              per_page: per_page
+            )
+          )
 
-          remove_empty_values_from! combined_params
           client.get "/api/v4/employees", combined_params
         end
 
@@ -56,13 +59,16 @@ module PayrollHero
         private
 
         def fetch(identifier, only:, except:, include:, page: nil, per_page: nil, **params)
-          combined_params = params.merge only: Array(only),
-                                         except: Array(except),
-                                         include: Array(include),
-                                         page: page,
-                                         per_page: per_page
+          combined_params = params.merge(
+            remove_empty_values_from!(
+              only: Array(only),
+              except: Array(except),
+              include: Array(include),
+              page: page,
+              per_page: per_page
+            )
+          )
 
-          remove_empty_values_from! combined_params
           client.get "/api/v4/employees/#{identifier}", combined_params
         end
       end
