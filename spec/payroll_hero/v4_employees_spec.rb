@@ -74,4 +74,13 @@ RSpec.describe 'V4 Scheduling' do
       end
     end
   end
+
+  describe 'convert_leaves' do
+    it do
+      VCR.use_cassette('v4_employee_convert_leaves') do
+        response = client.v4.employees.convert_leaves(5, {leaves: [{name: "Vacation", number_of_days: 28.0 }]})
+        expect(response).to be_empty
+      end
+    end
+  end
 end
