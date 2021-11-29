@@ -56,6 +56,14 @@ module PayrollHero
           fetch"#{id}/superiors", only: only, except: except, include: include, page: page, per_page: per_page, **params
         end
 
+        # Final Pay Feature: Convert all applicable leaves to work time
+        # only,except,include and paging params don't apply here as it's a write call
+        # expected attributes[Hash]: { leaves: [ { name: 'Vacation', number_of_days: 28.0 },...] }
+
+        def convert_leaves(id, attributes)
+          client.put "/api/v4/employees/#{id}/convert_leaves", attributes
+        end
+
         private
 
         def fetch(identifier, only:, except:, include:, page: nil, per_page: nil, **params)
