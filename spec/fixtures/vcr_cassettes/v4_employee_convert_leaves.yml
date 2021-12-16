@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://api.payrollhero.dev/api/v4/employees/5/convert_leaves?token=2j86kvirxyyhj3lyvurytj7gcis5l7t
+    body:
+      encoding: UTF-8
+      string: leaves%5B%5D%5Bname%5D=Vacation&leaves%5B%5D%5Bnumber_of_days%5D=28.0
+    headers:
+      User-Agent:
+      - Test Suite (PayrollHero::Api 1.2.6)
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      status:
+      - 200 OK
+      cache-control:
+      - max-age=0, private, must-revalidate
+      vary:
+      - Accept, Origin
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      x-permitted-cross-domain-policies:
+      - none
+      x-xss-protection:
+      - 1; mode=block
+      x-request-id:
+      - 61ba506e-394a-4a9e-8ed0-783e4d16f3ed
+      x-download-options:
+      - noopen
+      etag:
+      - W/"44136fa355b3678a1146ad16f7e8649e"
+      x-frame-options:
+      - SAMEORIGIN
+      x-runtime:
+      - '0.027634'
+      x-content-type-options:
+      - nosniff
+      date:
+      - Mon, 29 Nov 2021 11:04:05 GMT
+      x-powered-by:
+      - Phusion Passenger(R) 6.0.11
+      server:
+      - nginx/1.18.0 + Phusion Passenger(R) 6.0.11
+    body:
+      encoding: UTF-8
+      string: "{}"
+  recorded_at: Mon, 29 Nov 2021 11:04:05 GMT
+recorded_with: VCR 6.0.0
