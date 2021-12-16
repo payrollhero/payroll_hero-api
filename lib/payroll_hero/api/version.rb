@@ -1,5 +1,5 @@
 module PayrollHero
   module Api
-    VERSION = "1.2.6"
+    VERSION = "1.2.7"
   end
 end

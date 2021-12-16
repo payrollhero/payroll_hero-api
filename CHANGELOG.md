@@ -1,5 +1,23 @@
 # Change Log
 
+## [v1.2.7](https://github.com/payrollhero/payroll_hero-api/tree/v1.2.7) (2021-12-16)
+[Full Changelog](https://github.com/payrollhero/payroll_hero-api/compare/v1.2.6...v1.2.7)
+
+## [v1.2.6](https://github.com/payrollhero/payroll_hero-api/tree/v1.2.6) (2017-12-04)
+[Full Changelog](https://github.com/payrollhero/payroll_hero-api/compare/v1.2.5...v1.2.6)
+
+## [v1.2.5](https://github.com/payrollhero/payroll_hero-api/tree/v1.2.5) (2017-11-09)
+[Full Changelog](https://github.com/payrollhero/payroll_hero-api/compare/v1.2.4...v1.2.5)
+
+## [v1.2.4](https://github.com/payrollhero/payroll_hero-api/tree/v1.2.4) (2017-11-09)
+[Full Changelog](https://github.com/payrollhero/payroll_hero-api/compare/v1.2.3...v1.2.4)
+
+## [v1.2.3](https://github.com/payrollhero/payroll_hero-api/tree/v1.2.3) (2017-09-19)
+[Full Changelog](https://github.com/payrollhero/payroll_hero-api/compare/v1.2.2...v1.2.3)
+
+## [v1.2.2](https://github.com/payrollhero/payroll_hero-api/tree/v1.2.2) (2017-09-19)
+[Full Changelog](https://github.com/payrollhero/payroll_hero-api/compare/v1.2.1...v1.2.2)
+
 ## [v1.2.1](https://github.com/payrollhero/payroll_hero-api/tree/v1.2.1) (2016-09-21)
 [Full Changelog](https://github.com/payrollhero/payroll_hero-api/compare/v1.2.0...v1.2.1)
 
