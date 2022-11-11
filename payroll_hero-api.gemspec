@@ -27,6 +27,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec'
+  spec.add_development_dependency 'rubocop'
   spec.add_development_dependency 'vcr'
   spec.add_development_dependency 'webmock'
   spec.add_development_dependency 'rack', '< 2.0.0' # requires ruby >= 2.2.2 for 2.0
