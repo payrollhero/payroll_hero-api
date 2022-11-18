@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.payrollhero.dev/api/v4/schedule_events?employee_ids=1&end_date=2016-08-30&start_date=2016-08-29&time_zone=UTC&token=l306j1iq29qh7eryfd3znpqgdoaan1p&
+    uri: http://api.payrollhero.dev/api/v4/schedule_events?employee_ids=1&end_date=2016-08-30&start_date=2016-08-29&time_zone=UTC&token=l306j1iq29qh7eryfd3znpqgdoaan1p&worksite_ids%5B%5D
     body:
       encoding: US-ASCII
       string: ''
@@ -12,7 +12,7 @@ http_interactions:
   response:
     status:
       code: 200
-      message: 
+      message:
     headers:
       x-frame-options:
       - SAMEORIGIN
@@ -41,6 +41,6 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"schedule_events":[{"id":706,"kind":"recurring_schedule","employee_id":1,"is_rest_day":false,"shift_start_time":"2015-01-05T01:00:00Z","shift_end_time":"2015-01-05T09:00:00Z","shift_time_zone":"Asia/Hong_Kong","shift_worksite_id":77,"shift_breaks":[],"day_event_name":null,"day_event_date":null,"day_event_day_type_id":null,"recurrence_info":{"type":"week","on_monday":true,"on_tuesday":false,"on_wednesday":false,"on_thursday":false,"on_friday":false,"on_saturday":false,"on_sunday":false,"count":1,"end_time":null,"exceptions":["2015-02-07","2015-07-21","2015-07-20","2015-07-22","2015-07-24","2015-07-23","2015-04-13","2015-04-20","2016-01-12","2016-01-13","2016-03-21","2016-03-22","2016-04-04","2016-04-05","2016-04-01","2016-05-18","2016-05-19","2016-05-07","2016-03-15","2016-05-05","2016-05-26","2016-05-25","2016-02-01","2016-02-02","2016-04-11","2016-05-16","2016-05-10","2016-05-09","2016-05-08","2016-04-29","2016-05-04","2016-05-03","2016-03-04","2016-05-13","2016-05-14","2016-05-01","2016-05-02","2016-05-17","2016-01-11","2016-01-10","2016-01-09","2016-03-28","2016-03-02","2016-06-01","2016-05-27","2016-06-02","2016-04-26","2016-06-20","2016-06-21"]}},{"id":707,"kind":"recurring_schedule","employee_id":1,"is_rest_day":false,"shift_start_time":"2015-01-06T01:00:00Z","shift_end_time":"2015-01-06T09:00:00Z","shift_time_zone":"Asia/Hong_Kong","shift_worksite_id":77,"shift_breaks":[],"day_event_name":null,"day_event_date":null,"day_event_day_type_id":null,"recurrence_info":{"type":"week","on_monday":false,"on_tuesday":true,"on_wednesday":false,"on_thursday":false,"on_friday":false,"on_saturday":false,"on_sunday":false,"count":1,"end_time":null,"exceptions":["2015-02-07","2015-07-21","2015-07-20","2015-07-22","2015-07-24","2015-07-23","2015-04-13","2015-04-20","2016-01-12","2016-01-13","2016-03-21","2016-03-22","2016-04-04","2016-04-05","2016-04-01","2016-05-18","2016-05-19","2016-05-07","2016-03-15","2016-05-05","2016-05-26","2016-05-25","2016-02-01","2016-02-02","2016-04-11","2016-05-16","2016-05-10","2016-05-09","2016-05-08","2016-04-29","2016-05-04","2016-05-03","2016-03-04","2016-05-13","2016-05-14","2016-05-01","2016-05-02","2016-05-17","2016-01-11","2016-01-10","2016-01-09","2016-03-28","2016-03-02","2016-06-01","2016-05-27","2016-06-02","2016-04-26","2016-06-20","2016-06-21"]}}],"pagination":{"total_records":5,"total_pages":1,"per_page":1000,"page":1}}'
-    http_version: 
+    http_version:
   recorded_at: Wed, 21 Sep 2016 07:09:06 GMT
 recorded_with: VCR 3.0.1
