@@ -16,7 +16,7 @@ RSpec.describe 'V4 DaySchedules' do
 
   it 'works' do
     VCR.use_cassette('v4_schedule_events') do
-      response = client.v4.schedule_events.list(attributes)['schedule_events']
+      response = client.v4.schedule_events.list(**attributes)['schedule_events']
       expect(response.length).to eq(2)
     end
   end
