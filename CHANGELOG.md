@@ -1,5 +1,12 @@
 # Change Log
 
+## [v1.3.0](https://github.com/payrollhero/payroll_hero-api/tree/v1.3.0) (2022-11-21)
+[Full Changelog](https://github.com/payrollhero/payroll_hero-api/compare/v1.2.7...v1.3.0)
+
+- Official support for Ruby 3.0 and 3.1
+- Setup running rspec testing on Github Actions
+- Setup running rubocop and rubocop challenger automatically as well
+
 ## [v1.2.7](https://github.com/payrollhero/payroll_hero-api/tree/v1.2.7) (2021-12-16)
 [Full Changelog](https://github.com/payrollhero/payroll_hero-api/compare/v1.2.6...v1.2.7)
 
