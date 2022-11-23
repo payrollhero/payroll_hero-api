@@ -1,5 +1,10 @@
 # Change Log
 
+## [v1.3.1](https://github.com/payrollhero/payroll_hero-api/tree/v1.3.1) (2022-11-24)
+[Full Changelog](https://github.com/payrollhero/payroll_hero-api/compare/v1.3.0...v1.3.1)
+
+- [FIX] default params needs to be nil by default not empty arrays
+
 ## [v1.3.0](https://github.com/payrollhero/payroll_hero-api/tree/v1.3.0) (2022-11-21)
 [Full Changelog](https://github.com/payrollhero/payroll_hero-api/compare/v1.2.7...v1.3.0)
 
