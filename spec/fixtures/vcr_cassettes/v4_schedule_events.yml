@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.payrollhero.dev/api/v4/schedule_events?employee_ids=1&end_date=2016-08-30&start_date=2016-08-29&time_zone=UTC&token=l306j1iq29qh7eryfd3znpqgdoaan1p&worksite_ids%5B%5D
+    uri: http://api.payrollhero.dev/api/v4/schedule_events?employee_ids=1&end_date=2016-08-30&start_date=2016-08-29&time_zone=UTC&token=l306j1iq29qh7eryfd3znpqgdoaan1p
     body:
       encoding: US-ASCII
       string: ''
