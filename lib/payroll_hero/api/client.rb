@@ -12,7 +12,7 @@ module PayrollHero
         headers = {
           'User-Agent' => user_agent_string,
         }
-        if cookies.present?
+        unless cookies.empty?
           headers.merge!({ 'Cookie' => (cookies.map{ |key, value| "#{key}=#{value}" }.join('; ')) })
         end
         params = {
