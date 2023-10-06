@@ -14,7 +14,7 @@ module PayrollHero
         }
         headers.merge!({ 'Cookie' => cookies.map { |key, value| "#{key}=#{value}" }.join('; ') }) unless cookies.empty?
         params = {
-          token:,
+          token: token,
         }
         @client = Faraday.new(url: base_url) do |faraday|
           faraday.request :url_encoded
