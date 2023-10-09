@@ -28,7 +28,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec'
   spec.add_development_dependency 'rubocop'
-  spec.add_development_dependency 'vcr'
+  spec.add_development_dependency 'vcr', '< 6.2'
   spec.add_development_dependency 'webmock'
   spec.add_development_dependency 'rack', '< 2.0.0' # requires ruby >= 2.2.2 for 2.0
   # Version locked as 1.10.4 has known installation issues
