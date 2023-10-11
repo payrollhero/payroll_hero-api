@@ -1,5 +1,10 @@
 # Change Log
 
+## [v1.4.0](https://github.com/payrollhero/payroll_hero-api/tree/v1.4.0) (2023-10-09)
+[Full Changelog](https://github.com/payrollhero/payroll_hero-api/compare/v1.3.1...v1.4.0)
+
+- Added provisions for passing shared cookies (credentials) for SuperAdmin access.
+
 ## [v1.3.1](https://github.com/payrollhero/payroll_hero-api/tree/v1.3.1) (2022-11-24)
 [Full Changelog](https://github.com/payrollhero/payroll_hero-api/compare/v1.3.0...v1.3.1)
 
