@@ -8,10 +8,11 @@ module PayrollHero
     class Client
       attr_reader :client
 
-      def initialize(token, base_url)
+      def initialize(token, base_url, cookies = {})
         headers = {
           'User-Agent' => user_agent_string,
         }
+        headers.merge!({ 'Cookie' => cookies.map { |key, value| "#{key}=#{value}" }.join('; ') }) unless cookies.nil? || cookies.empty?
         params = {
           token: token,
         }

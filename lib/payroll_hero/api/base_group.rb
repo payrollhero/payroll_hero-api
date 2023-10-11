@@ -2,8 +2,8 @@ module PayrollHero
   module Api
 
     class BaseGroup
-      def initialize(token)
-        @client = new_client(token, :core)
+      def initialize(token, cookies = {})
+        @client = new_client(token, :core, cookies)
       end
 
 
@@ -15,8 +15,8 @@ module PayrollHero
         PayrollHero::Api.send("#{name}_base_url")
       end
 
-      def new_client(token, name)
-        Client.new(token, base_url_for(name))
+      def new_client(token, name, cookies)
+        Client.new(token, base_url_for(name), cookies)
       end
 
       def remove_nil_values_from!(hash)

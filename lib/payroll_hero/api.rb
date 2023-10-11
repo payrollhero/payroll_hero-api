@@ -10,22 +10,22 @@ module PayrollHero
     define_setting :debug, false
     define_setting :application_name, :none
 
-    def self.new(token)
+    def self.new(token, cookies = {})
       sections = {
         v2: {
-          worksites: V2::Worksites.new(token),
+          worksites: V2::Worksites.new(token, cookies),
         },
         v3: {
-          day_schedules: V3::DaySchedules.new(token),
-          employees: V3::Employees.new(token),
-          attendance_days: V3::AttendanceDays.new(token),
+          day_schedules: V3::DaySchedules.new(token, cookies),
+          employees: V3::Employees.new(token, cookies),
+          attendance_days: V3::AttendanceDays.new(token, cookies),
         },
         v4: {
-          employees: V4::Employees.new(token),
-          leaves: V4::Leaves.new(token),
-          permissions: V4::Permissions.new(token),
-          shifts: V4::Shifts.new(token),
-          schedule_events: V4::ScheduleEvents.new(token),
+          employees: V4::Employees.new(token, cookies),
+          leaves: V4::Leaves.new(token, cookies),
+          permissions: V4::Permissions.new(token, cookies),
+          shifts: V4::Shifts.new(token, cookies),
+          schedule_events: V4::ScheduleEvents.new(token, cookies),
         }
       }
       Hashie::Mash.new(sections)
